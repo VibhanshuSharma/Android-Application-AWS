@@ -1,0 +1,324 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/leg_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/con">
+
+    <include layout="@layout/navigation_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+        android:text="Chamber:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView7"
+        android:textStyle="bold"
+        android:textColor="@color/navigationBarColor" />
+
+    <TextView
+        android:text="End Term:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView10"
+        android:textColor="@color/navigationBarColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Contact:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView8"
+        android:textColor="@color/navigationBarColor"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+        <TextView
+        android:text="Start Term:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView9"
+        android:textStyle="bold"
+        android:textColor="@color/navigationBarColor"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+        android:text="Fax:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="17dp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/navigationBarColor" />
+
+        <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignStart="@+id/chamber"
+        android:id="@+id/contact1" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startTerm"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignStart="@+id/contact1" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignEnd="@+id/startTerm"
+        android:id="@+id/endTerm" />
+
+        <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_alignStart="@+id/office"
+        android:id="@+id/state" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignStart="@+id/state"
+        android:id="@+id/fax" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignStart="@+id/fax"
+        android:id="@+id/birthday" />
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/world"
+        android:id="@+id/website"
+        android:layout_marginEnd="19dp"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_star_b"
+        android:id="@+id/star"
+        android:layout_toStartOf="@+id/fb"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_alignBottom="@+id/website"
+        android:layout_width="70dp" />
+
+        <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/party"
+        android:layout_alignBottom="@+id/smallImage"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/facebook"
+        android:id="@+id/fb"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/include3"
+        android:layout_toStartOf="@+id/twitter"
+        android:layout_marginEnd="21dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/twitter"
+        android:id="@+id/twitter"
+        android:layout_alignTop="@+id/fb"
+        android:layout_toStartOf="@+id/website"
+        android:layout_marginEnd="13dp" />
+
+        <TextView
+            android:text="Term:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:id="@+id/textView11"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView10"
+            android:layout_alignStart="@+id/textView10" />
+
+        <TextView
+        android:text="State:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView13"
+        android:textStyle="normal|bold"
+        android:textColor="@color/navigationBarColor"
+            android:layout_below="@+id/textView12"
+            android:layout_alignStart="@+id/textView12" />
+
+        <TextView
+            android:text="Birthday:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_marginTop="13dp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_below="@+id/textView14"
+            android:layout_alignStart="@+id/textView14" />
+
+        <TextView
+            android:text="Email:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:id="@+id/textView6"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/textView5"
+            android:layout_alignEnd="@+id/textView11" />
+
+        <TextView
+            android:text="Office:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:id="@+id/textView12"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView11"
+            android:layout_alignStart="@+id/textView11" />
+
+        <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:id="@+id/chamber"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignEnd="@+id/star" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignStart="@+id/chamber" />
+
+        <TextView
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:id="@+id/textView5"
+            android:textStyle="normal|bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/smallImage"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/ic_person_black_24dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/pic"
+            android:layout_below="@+id/star"
+            android:layout_alignEnd="@+id/party" />
+
+        <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@mipmap/ic_person_black_24dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/smallImage"
+            android:layout_below="@+id/pic"
+            android:layout_alignStart="@+id/pic" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:id="@+id/email"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chamber"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_alignStart="@+id/chamber"
+            android:layout_alignEnd="@+id/term" />
+
+        <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:id="@+id/office"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignStart="@+id/term" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:id="@+id/term"
+            android:progressBackgroundTint="#706E66"
+            android:layout_height="wrap_content"
+
+            android:minHeight="10dip"
+
+            android:text="4%"
+            android:progressTint="#FFC300"
+            android:layout_above="@+id/textView12"
+            android:layout_alignStart="@+id/endTerm"
+            android:layout_toStartOf="@+id/website" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_star_black_24dp"
+            android:id="@+id/colorStar"
+            android:layout_width="70dp"
+            android:layout_alignTop="@+id/star"
+            android:layout_alignStart="@+id/star"
+            android:layout_above="@+id/pic" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_alignBottom="@+id/term"
+            android:layout_toStartOf="@+id/twitter" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

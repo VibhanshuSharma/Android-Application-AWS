@@ -1,0 +1,265 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bills_detail">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/con">
+
+        <include layout="@layout/navigation_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:id="@+id/email"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chamber"
+            android:layout_alignEnd="@+id/fb"
+            android:layout_alignTop="@+id/textView7" />
+
+        <TextView
+            android:text="Various Status:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textStyle="normal|bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_above="@+id/textView15"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_marginBottom="19dp" />
+
+        <TextView
+            android:text="Sponsor:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textStyle="bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_marginBottom="25dp"
+            android:layout_above="@+id/textView10"
+            android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+            android:text="Title:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textStyle="normal|bold"
+            android:textColor="@color/windowBackground"
+            android:layout_above="@+id/textView8"
+            android:layout_marginBottom="16dp"
+            android:layout_alignEnd="@+id/email" />
+
+        <TextView
+            android:text="Bill ID:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textStyle="bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_marginBottom="64dp"
+            android:layout_above="@+id/textView5"
+            android:layout_alignStart="@+id/textView16" />
+
+        <TextView
+            android:text="Title:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView5"
+            android:id="@+id/textView16"
+            android:textStyle="normal|bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthday"
+            android:layout_below="@+id/textView14"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fax"
+            android:layout_alignBaseline="@+id/textView14"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Chamber:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+            android:layout_above="@+id/textView11"
+            android:layout_alignStart="@+id/textView9" />
+
+        <TextView
+            android:text="Status:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+            android:layout_above="@+id/textView12"
+            android:layout_alignStart="@+id/textView8" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endTerm"
+            android:layout_alignBaseline="@+id/textView10"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignStart="@+id/startTerm" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/term"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignStart="@+id/endTerm" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="150dp"
+            android:id="@+id/party"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignEnd="@+id/smallpic" />
+
+        <TextView
+            android:text="Bill Type:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="34dp"
+            android:layout_above="@+id/textView9"
+            android:layout_alignEnd="@+id/textView9" />
+
+        <TextView
+            android:text="Bill URL:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:textStyle="normal|bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView14" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/state"
+            android:layout_above="@+id/fax"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Congress URL:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textStyle="normal|bold"
+            android:textColor="@color/navigationBarColor"
+            android:layout_alignBaseline="@+id/state"
+            android:layout_alignBottom="@+id/state"
+            android:layout_alignEnd="@+id/textView12" />
+
+        <TextView
+            android:text="Introduced On:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textColor="@color/navigationBarColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="21dp"
+            android:layout_above="@+id/textView13"
+            android:layout_alignStart="@+id/textView10" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chamber"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_toStartOf="@+id/smallpic"
+            android:layout_alignTop="@+id/textView7" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/ic_star_border_black_24dp"
+            android:id="@+id/smallpic"
+            android:layout_marginEnd="22dp"
+            android:layout_above="@+id/chamber"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_star_black_24dp"
+            android:layout_alignBottom="@+id/smallpic"
+            android:layout_alignStart="@+id/smallpic"
+            android:id="@+id/color_pic"
+            android:layout_alignEnd="@+id/smallpic"
+            android:layout_alignTop="@+id/smallpic" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_height="wrap_content"
+            android:id="@+id/startTerm"
+            android:layout_width="150dp"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignStart="@+id/party" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact1"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignStart="@+id/party" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/office"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignStart="@+id/term" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

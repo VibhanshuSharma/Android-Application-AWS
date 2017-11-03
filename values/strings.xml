@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Second_Application</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="ByState"></string>
+    <string name="House"></string>
+    <string name="Senate"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
